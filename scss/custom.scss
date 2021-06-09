@@ -1,0 +1,163 @@
+@import "../bootstrap/scss/functions";
+
+$theme-color: #d52856;
+$primary-color: $theme-color !default;
+
+$theme-colors: (
+  "primary": $theme-color,
+);
+
+@import "../bootstrap/scss/variables";
+@import "../bootstrap/scss/mixins";
+
+@import "../bootstrap/scss/root";
+
+@import "../bootstrap/scss/buttons";
+@import "../bootstrap/scss/card";
+
+body {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: #5a5a5a;
+  margin: 0;
+}
+
+.carousel {
+  margin-bottom: 4rem;
+}
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+.carousel-item {
+  height: 30rem;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 42rem;
+}
+.marketing img {
+  width: 140px;
+  height: 140px;
+  transition: width 0.5s, height 0.5s;
+}
+
+.marketing img:hover {
+  width: 200px;
+  height: 200px;
+}
+
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: 400;
+}
+.marketing .col-lg-4 p {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+}
+
+.featurette-divider {
+  margin: 5rem 0;
+}
+
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -0.05rem;
+}
+
+@media (max-width: 480px) {
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4em;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+  .parallax {
+    height: 500px;
+  }
+
+  blockquote p {
+    font-size: 20px;
+  }
+}
+
+#myCarousel img {
+  filter: brightness(50%);
+}
+
+.quote {
+  min-height: 300px;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.quote-one {
+  background-image: url("../img/trilha.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  height: 300px;
+}
+
+.quote-two {
+  background-image: url("../img/treino-praia.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  height: 300px;
+}
+.parallax {
+  background-color: rgba(0, 0, 0, 0.555);
+  height: 300px;
+  color: white;
+  text-align: center;
+  font-size: 1.8em;
+  padding: 20px;
+}
+
+blockquote p {
+  color: white;
+  text-align: center;
+  padding-top: 80px;
+}
+
+#contato_div {
+  width: 100%;
+}
+
+#title_plan {
+  text-align: center;
+  margin-top: 20px;
+}
+#price {
+  margin-top: 20px;
+}
+
+#titulo_contato {
+  text-align: center;
+  color: black;
+}
+
+#contato {
+  width: 90%;
+  margin: 5px auto 20px auto;
+  text-align: start;
+}
+
+#meufooter {
+  background-color: #212529;
+  color: white;
+  height: 100px;
+  margin-bottom: -100px;
+  text-align: center;
+  padding-top: 20px;
+}
